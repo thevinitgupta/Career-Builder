@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Builder</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button id="trigger">Feedback</button>
+    <div id="overlay">
+      <div id="popup">
+        <i class="far fa-times-circle" id="close"></i>
+            <img src="logo.png" alt="logo" id="logo">
+            <div id="feedback">
+                <h3>What type of Suggestions do you want to give?</h3>
+                <form action="" id="feedback-form">
+                    <button>Suggestions or general feedback</button>
+                    <button> Bug or Site Issue</button>
+                    <button>Question</button> 
+                </form>
+                <button id="nextFeed">>></button>
+            </div>
+            
+      </div>
+    </div>
+    <header id="header">
+        <div class="navbar">
+            <img src="logo.png" alt="logo" id="logo">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="index.html">Find Job</a></li>
+                <li class="nav-item"><a href="#">Create Profile</a></li>
+                <li class="nav-item"><a href="#">Recommendations</a></li>
+                <li class="nav-item"><a href="#">Resources</a></li>
+            </ul>
+            <div class="nav-right">
+                <span class="nav-right-item">Sign In</span>
+                <span class="nav-right-item">Employee</span>
+            </div> 
+        </div>
+        <div id="search">
+            <p class="search-head">Jobs and Vacancies</p>
+            <input type="search" name="" id="search1" placeholder="Type">
+            <input type="search" name="" id="search2" placeholder="Location">
+            <button id="search-btn">Find Jobs</button>
+        </div>
+    </header>
+    <div id="main-body">
+        <div class="filter">
+            
+            <div class="filter-body">
+                <span class="filter-head">Date Posted<button class="minimize 1" >-</button></span><br><br>
+                <form action="" class="1">
+                    <input type="radio" name="date" id="" value="24 hours">
+                    <label for="date1">24 hours</label> <br><br>
+                    <input type="radio" name="date" id="" value="3 days">                
+                    <label for="date2">3 days</label> <br><br>
+                    <input type="radio" name="date" id="" value="7 days">
+                    <label for="date3">7 days</label> <br><br>
+                    <input type="radio" name="date" id="" value="30 days">
+                    <label for="date4">30 days</label>  <br><br>
+                </form>
+                <div class="border"></div>
+            </div>
+            <div class="filter-body">
+                <span class="filter-head">Job Type<button class="minimize 2" >-</button></span><br><br>
+                <form action="" class="2">
+                    <input type="checkbox" name="job" id="" value="All">
+                    <label for="job1">All</label> <br><br>
+                    <input type="checkbox" name="job" id="" value="parttime">                
+                    <label for="job2">Part Time</label> <br><br>
+                    <input type="checkbox" name="Job" id="" value="fulltime">
+                    <label for="job3">Full Time</label><br><br>
+                </form>
+                <div class="border"></div>
+            </div>
+            <div class="filter-body">
+                <span class="filter-head">Categories<button class="minimize 3" >-</button></span><br><br>
+                <form action="" class="3">
+                    <input type="checkbox" name="category" id="" value="IT">
+                    <label for="cat1">Information Technology</label> <br><br>
+                    <input type="checkbox" name="category" id="" value="engineering">                
+                    <label for="cat2">Engineering</label> <br><br>
+                    <input type="checkbox" name="category" id="" value="professional">
+                    <label for="cat3">Professional</label><br><br>
+                </form>
+            </div>
+           
+        </div>
+        <div class="result">
+            <div class="result-criteria">
+                <p>Sort By : 
+                    <span class="criteria">Reference</span>
+                    <span class="criteria">Date</span>
+                </p>
+            </div>
+            <div class="job">
+                <h3>Lorem Ipsum</h3>
+                <span>Lorem ipsum dolor sit.</span> <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="job">
+                <h3>Lorem Ipsum</h3>
+                <span>Lorem ipsum dolor sit.</span> <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
